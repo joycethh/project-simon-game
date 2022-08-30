@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Simon</title>
+  <link rel="stylesheet" href="styles.css">
+  <!-- google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@200&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+</head>
+
+<body>
+  <h1 id="level-title">Press A Key to Start</h1>
+  <div class="rules">
+    <h3>How to play</h3>
+    <ol type="1">
+    <li>
+       Simon will give the first signal. Repeat the signal by pressing the same color lens.
+    </li>
+    <li>
+      Simon will duplicate the first signal and add one. Repeat these two signals by pressing the same color lenses, in order.
+    </li>
+    <li>
+      Simon will duplicate these first two signals and add one.
+    </li>
+    <li>
+      Continue playing as long as you can repeat each sequence of signals correctly.
+    </li>
+    <li>
+      If you fail to repeat a sequence exactly, Simon responds with a "RAZZ" sound. This means you've lost, and the sequence of signals ends.
+    </li>
+    </ol>
+  </div>
+
+  <div class="container">
+    <div>
+      <div type="button" id="green" class="btn green">
+      </div>
+      <div type="button" id="red" class="btn red">
+      </div>
+    </div>
+
+    <div >
+      <div type="button" id="yellow" class="btn yellow">
+      </div>
+      <div type="button" id="blue" class="btn blue">
+      </div>
+    </div>
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="game.js" charset="utf-8"></script>
+
+</body>
+
+</html>
